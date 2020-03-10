@@ -12,12 +12,12 @@
 <body id="page-top" data-spy="scroll" data-target=".toc" data-offset="20">
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-        <a class="logo-link navbar-brand" href="https://getlaminas.org/" data-tooltip data-placement="bottom" title="Go to the Laminas homepage">
+        <a class="logo-link navbar-brand" href="http://laminas.org.cn/" data-tooltip data-placement="bottom" title="Go to the Laminas homepage">
             <img src="https://docs.laminas.dev/img/laminas-foundation-white.svg" height="28" alt="Laminas">
         </a>
-        <a class="navbar-title" href="https://docs.laminas.dev/" data-tooltip
+        <a class="navbar-title" href="https://laminas.org.cn/" data-tooltip
            data-placement="bottom" title="Go to the Laminas Documentation">
-            Documentation
+            文档
         </a>
 
         <button type="button"
@@ -35,39 +35,39 @@
                 <li class="nav-item">
                     <div class="dropdown sub-project-selector">
                         <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
-                            All Docs
+                            所有文档
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a href="https://docs.mezzio.dev/" class="dropdown-item">
-                                <div class="row align-items-center">
-                                    <div class="col-md-4 col-sm-12">
-                                        <img src="/img/laminas-mezzio-rgb.svg">
-                                    </div>
-                                    <div class="col-md-8 col-sm-12">
-                                        <strong>Mezzio</strong><br>
-                                        PSR-15 Middleware in Minutes
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="https://docs.laminas.dev/components/" class="dropdown-item">
+                            <a href="/components/" class="dropdown-item">
                                 <div class="row align-items-center">
                                     <div class="col-md-4 col-sm-12">
                                         <img src="/img/laminas-components-rgb.svg">
                                     </div>
                                     <div class="col-md-8 col-sm-12">
-                                        <strong>Components</strong><br>
-                                        Components for Enterprise Applications
+                                        <strong>组件</strong><br>
+                                        为企业级应用而生的组件
                                     </div>
                                 </div>
                             </a>
-                            <a href="https://docs.laminas.dev/mvc" class="dropdown-item">
+                            <a href="/mvc/" class="dropdown-item">
                                 <div class="row align-items-center">
                                     <div class="col-md-4 col-sm-12">
                                         <img src="/img/laminas-mvc-rgb.svg">
                                     </div>
                                     <div class="col-md-8 col-sm-12">
                                         <strong>MVC</strong><br>
-                                        MVC for Enterprise Applications
+                                        企业级的MVC框架
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://docs.mezzio.dev/" class="dropdown-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4 col-sm-12">
+                                        <img src="/img/laminas-mezzio-rgb.svg">
+                                    </div>
+                                    <div class="col-md-8 col-sm-12">
+                                        <strong>Mezzio（官方）</strong><br>
+                                        PSR-15 Middleware in Minutes
                                     </div>
                                 </div>
                             </a>
@@ -77,28 +77,31 @@
                                         <img src="/img/laminas-api-tools-rgb.svg">
                                     </div>
                                     <div class="col-md-8 col-sm-12">
-                                        <strong>API Tools</strong><br>
+                                        <strong>API Tools（官方）</strong><br>
                                         Build RESTful APIs in Minutes
                                     </div>
                                 </div>
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item dropdown-item--secondardy" href="https://docs.laminas.dev/migration/">
+                            <a class="dropdown-item dropdown-item--secondardy" href="/migration/">
                                 <div class="row align-items-center">
                                     <div class="col-md-8 offset-md-4 col-sm-12">
-                                        Migration to Laminas
+                                        迁移到 Laminas
                                     </div>
                                 </div>
                             </a>
-                            <a class="dropdown-item dropdown-item--secondardy" href="https://docs.laminas.dev/tutorials/">
+                            <a class="dropdown-item dropdown-item--secondardy" href="/tutorials/">
                                 <div class="row align-items-center">
                                     <div class="col-md-8 offset-md-4 col-sm-12">
-                                        Tutorials
+                                        入门引导
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a href="https://docs.laminas.dev/" target="_blank" class="nav-link">官方文档（En）</a>
                 </li>
                 <li class="nav-item">
                     <a href="https://getlaminas.org/participate" class="nav-link">Community</a>
@@ -113,7 +116,7 @@
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <h1 class="header__title">
-                    Migration to Laminas
+                    迁移到 Laminas
                 </h1>
             </div>
         </div>
@@ -123,83 +126,78 @@
 <div class="container"><div class="row">
     <main class="col-md-9 col-sm-12 content">
         <div class="toc">
-            <h6 class="toc__headline">On this page</h6>
+            <h6 class="toc__headline">导航</h6>
 
             <ul class="toc__list">
-                <li class="toc__entry"><a class="toc__link nav-link" href="#preparation">Preparation</a></li>
-                <li class="toc__entry"><a class="toc__link nav-link" href="#install-laminas-migration">Install laminas-migration</a></li>
-                <li class="toc__entry"><a class="toc__link nav-link" href="#run-the-migration-command">Run the migration command</a></li>
-                <li class="toc__entry"><a class="toc__link nav-link" href="#optional-verify-changes">Verify changes (optional)</a></li>
-                <li class="toc__entry"><a class="toc__link nav-link" href="#install-dependencies">Install dependencies</a></li>
-                <li class="toc__entry"><a class="toc__link nav-link" href="#test">Test</a></li>
-                <li class="toc__entry"><a class="toc__link nav-link" href="#post-migration-optional">Post migration (optional)</a></li>
-                <li class="toc__entry"><a class="toc__link nav-link" href="#summary">Summary</a></li>
+                <li class="toc__entry"><a class="toc__link nav-link" href="#preparation">准备工作</a></li>
+                <li class="toc__entry"><a class="toc__link nav-link" href="#install-laminas-migration">安装 laminas-migration</a></li>
+                <li class="toc__entry"><a class="toc__link nav-link" href="#run-the-migration-command">运行 migration 命令</a></li>
+                <li class="toc__entry"><a class="toc__link nav-link" href="#optional-verify-changes">验证修改 (可选)</a></li>
+                <li class="toc__entry"><a class="toc__link nav-link" href="#install-dependencies">安装依赖</a></li>
+                <li class="toc__entry"><a class="toc__link nav-link" href="#test">测试</a></li>
+                <li class="toc__entry"><a class="toc__link nav-link" href="#post-migration-optional">提交迁移 (可选)</a></li>
+                <li class="toc__entry"><a class="toc__link nav-link" href="#summary">总结</a></li>
             </ul>
         </div>
 
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Overview</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Migration to Laminas</li>
+                <li class="breadcrumb-item"><a href="/">总览</a></li>
+                <li class="breadcrumb-item active" aria-current="page">迁移到 Laminas</li>
             </ol>
         </nav>
 
-        <h1>Migration to Laminas</h1>
+        <h1>迁移到 Laminas</h1>
 
 <p>
-    Laminas and its subprojects are an open source continuation of
-    <a href="https://github.com/zendframework">Zend Framework</a> and its
-    subprojects, and are the official fork of the project now that it has been
-    archived and abandoned.
+    Laminas 及其子项目是 <a href="https://github.com/zendframework">Zend Framework</a>
+    及其子项目开源版本的延续，该项目将作为正式分支，原有官方项目将进行归档并逐渐废弃。
 </p>
 
 <blockquote>
     <p>
-        For purposes of this document, when we refer to "Zend Framework", we mean any
-        package originally provided by the Zend Framework project or its subprojects,
-        <strong>including those provided by <a href="https://apigility.org">Apigility</a> or
+        在本文档中，我们提及的 "Zend Framework" 均表示最初由 Zend Framework 项目提供的包文件
+        以及其子项目
+        <strong>包括 <a href="https://apigility.org">Apigility</a> 或
         <a href="https://getexpressive.org">Expressive</a>.</strong>
     </p>
 </blockquote>
 
-<p>You can migrate:</p>
+<p>可以进行的迁移:</p>
 
 <ul>
-    <li>Individual projects or applications that depend on Zend Framework, or
-        have dependencies on components that depend on Zend Framework.</li>
+    <li>依赖 Zend Framework 项目，或者其组件的单个组件或者应用。</li>
 
-    <li>Libraries that depend on Zend Framework components.</li>
+    <li>依赖 Zend Framework 组件的库。</li>
 </ul>
 
-<h2 id="preparation">1. Preparation</h2>
+<h2 id="preparation">1. 准备工作</h2>
 
-<h3 id="ensure-you-have-an-up-to-date-composer">Ensure you have an up-to-date Composer</h3>
+<h3 id="ensure-you-have-an-up-to-date-composer">确保你安装了最新版本的 Composer</h3>
 
 <p>
-    Due to features of <a href="https://getcomposer.org">Composer</a> our dependency plugin
-    uses, we require Composer 1.7.0 and up. If you're unsure what version you are
-    on, run <code>composer --version</code>. If you are on an older version, run
-    <code>composer self-update</code>.
+    我们的插件依赖 <a href="https://getcomposer.org">Composer</a> 并需要 1.7.0 及以上版本。
+    如果你不确定当前使用的版本，可以运行 <code>composer --version</code> 来查看版本。
+    如果版本过低，运行 <code>composer self-update</code> 进行升级。
 </p>
 
 <p>
-    (We assume you use Composer to install Zend Framework, as it is the only
-    supported mechanism currently.)
+    （目前唯一的限制在于，我们默认你使用的是 Composer 安装的 Zend Framework。）
 </p>
 
-<h3 id="make-sure-your-code-is-under-version-control">Make sure your code is under version control</h3>
+<h3 id="make-sure-your-code-is-under-version-control">
+    确保你使用的版本控制软件管理的你当前代码
+</h3>
 
 <p>
-    The migration tool changes source code, updates templates, modifies your
-    <code>composer.json</code> and removes your <code>composer.lock</code> and
-    <code>vendor/</code> subdirectory, among other things. If you want to be
-    able to roll back in the case of a problem, please make certain your code is
-    under version control!
+    迁移工具会修改你的代码，升级模板，修改<code>composer.json</code>文件，移除
+    <code>composer.lock</code> <code>vendor/</code> 以及其子目录，以及一些其他的更改。
+    如果你想要在出问题后回滚你的代码，请务必确保你使用了版本控制软件来管理你的代码！
 </p>
 
 <p>
-    We recommend <a href="https://git-scm.org">Git</a>. If your application is
-    not currently under version control, install git, and then:
+    我们推荐 <a href="https://git-scm.org">Git</a>.
+    如果你的应用当前未使用版本公职软件，你可以安装 git 并进行如下操作:
 </p>
 
 <pre class="codehilite"><code class="language-bash">$ cd path/to/your/application
@@ -208,48 +206,44 @@ $ echo "vendor/" > .gitignore
 $ git add .
 $ git commit -m 'Initial import'</code></pre>
 
-<p>You will then be able to see what changes you introduce.</p>
+<p>接下来你就可以随时查看你对代码进行了哪些更改。</p>
 
-<h2 id="install-laminas-migration">2. Install laminas-migration</h2>
+<h2 id="install-laminas-migration">2. 安装 laminas-migration</h2>
 
-<p>There are three ways to install the tool:</p>
+<p>这里有三种安装方式:</p>
 
 <ol>
-    <li>Via a global composer requirement (recommended)</li>
-    <li>Via cloning</li>
-    <li>As a local dependency</li>
+    <li>通过 composer 的 require 命令 (推荐)</li>
+    <li>直接 clone</li>
+    <li>使用本地环境变量</li>
 </ol>
 
-<h3 id="via-a-global-composer-requirement">Via a global composer requirement</h3>
+<h3 id="via-a-global-composer-requirement">通过 composer 的 require 命令</h3>
 
 <p>
-    Composer allows you to require packages in a <em>global</em> context as well. If you
-    choose this option, you will run:
+    Composer 允许你通过全局方式调用安装包文件。如果你使用当前当时：
 </p>
 
 <pre class="codehilite"><code class="language-bash">$ composer global require laminas/laminas-migration</code></pre>
 
 <p>
-    It is up to you to ensure that the <code>vendor/bin/</code> subdirectory of your global
-    Composer installation is in your environment <code>$PATH</code>. You can locate the global
-    context directory using:
+    这样做需要你确保环境变量 <code>$PATH</code> 指向了 Composer安装包的子目录
+    <code>vendor/bin/</code>。你可以使用如下命令来查找已经配置好的目录：
 </p>
 
 <pre class="codehilite"><code class="language-bash">$ composer global config home</code></pre>
 
 <blockquote>
-    <h4 id="adding-to-the-path">Adding to the PATH</h4>
+    <h4 id="adding-to-the-path">添加环境变量</h4>
 
     <p>
-        The mechanism for adding to your environment <code>$PATH</code> variable
-        depends on your operating system.
+        环境变量 <code>$PATH</code> 配置取决于你当前的操作系统。
     </p>
 
     <p>
-        For Linux, Mac, and other *nix variants, you can do so by adding a line
-        like the following at the end of your profile configuration file (e.g.,
+        对于 Linux, Mac, 及其他类 *nix 系统来说，你可以在 profile 配置(e.g.,
         <code>$HOME/.bashrc</code>, <code>$HOME/.zshrc</code>,
-        <code>$HOME/.profile</code>, etc.):
+        <code>$HOME/.profile</code>, etc.)文件中添加如下配置：
     </p>
 
     <pre class="codehilite language-bash"><code class="language-bash">
@@ -257,145 +251,139 @@ $ git commit -m 'Initial import'</code></pre>
     </code></pre>
 
     <p>
-        For Windows, the situation is a bit more involved; <a href="https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/">this HOWTO</a>
-        provides a good tutorial on the subject.
+        对于 Windows 系统来说操作会稍微复杂；参考：
+        <a href="https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/">this HOWTO</a>
     </p>
 </blockquote>
 
-<h3 id="via-cloning">Via cloning</h3>
+<h3 id="via-cloning">直接 clone</h3>
 
-<p>Clone the repository somewhere:</p>
+<p>Clone仓库:</p>
 
 <pre class="codehilite"><code class="language-bash">$ git clone https://github.com/laminas/laminas-migration.git</code></pre>
 
-<p>Install dependencies:</p>
+<p>安装依赖:</p>
 
 <pre class="codehilite"><code class="language-bash">$ cd laminas-migration
 $ composer install</code></pre>
 
 <p>
-    From there, either add the <code>bin/</code> directory to your <code>$PATH</code> (see the
-    <a href="#adding-to-the-path">note on adding to the PATH</a>, above), symlink the
-    <code>bin/laminas-migration</code> script to a directory in your <code>$PATH</code>, or create an
-    alias to the <code>bin/laminas-migration</code> script using your shell:
+    目前，我们同样 <code>$PATH</code> 中添加了 <code>bin/</code> 目录，(参见以上
+    <a href="#adding-to-the-path">添加环境变量部分</a>) 将脚本目录 <code>bin/laminas-migration</code>
+    软连接到 <code>$PATH</code> 中，或者使用 shell 脚本来创建 <code>bin/laminas-migration</code>  的别名：
 </p>
 
-<pre class="codehilite"><code class="language-bash"># Adding to PATH:
+<pre class="codehilite"><code class="language-bash"># 添加到PATH:
 $ export PATH=/path/to/laminas-migration/bin:$PATH
-# Symlinking to a directory in your PATH:
+# 添加软连接:
 $ cd $HOME/bin && ln -s /path/to/laminas-migration/bin/laminas-migration .
-# creating an alias:
+# 创建别名:
 $ alias laminas-migration=/path/to/laminas-migration/bin/laminas-migration</code></pre>
 
-<h2 id="run-the-migration-command">3. Run the migration command</h2>
+<h2 id="run-the-migration-command">3. 运行迁移命令</h2>
 
 <p>
-    Once you have installed the laminas-migration tooling, enter a project you wish
-    to migrate, and run the following:
+    一单你安装了 laminas-migration 工具，进入你需要迁移项目的目录，运行：
 </p>
 
 <pre class="codehilite"><code class="language-bash">$ laminas-migration migrate</code></pre>
 
 <p>
-    You may want to use the <code>--exclude</code> or <code>-e</code> option one or
-    more times for directories to <em>exclude</em> from the rewrite, or the
-    <code>--filter</code> or <code>-f</code> option one or more times to provide
-    regular expressions of which files to <em>include</em> in the rewrite.
+    你可能需要一次或者多次使用 <code>--exclude</code> 或 <code>-e</code> 参数
+    来 <em>排除</em> 不需要重写的目录，或者使用 <code>--filter</code> 或 <code>-f</code>
+    参数来使用正则表达式 <em>指定</em> 需要重写的文件。
 </p>
 
-<p>As an example, to exclude the <code>data/</code> subdirectory, you could run:</p>
+<p>举个例子， 排除 <code>data/</code> 子目录, 可以运行:</p>
 
 <pre class="codehilite"><code class="language-bash">$ laminas-migration migrate -e data</code></pre>
 
 <blockquote>
-    <h4 id="migrating-the-conservative-way">Migrating the conservative way</h4>
+    <h4 id="migrating-the-conservative-way">保守的迁移方式</h4>
     <p>
-        In case that you have strict upgrade paths and dont want to upgrade any package to its latest version, you might
-        want to use <code>--keep-locked-versions</code> which ensures that <em>any</em> package from <code>composer.lock</code>
-        will be added with the currently installed version to your <code>composer.json</code>.
+        如果你有升级路径的限制，并且不想将任何包升级到最新的版本，你可能需要使用 <code>--keep-locked-versions</code>
+        来确保<code>composer.json</code>中<em>所有</em>的包都将从 <code>composer.lock</code> 中获取版本信息来安装。
     </p>
     <p>
-        We encourage you to migrate the <em>non-conservative</em> way to avoid unexpected issues with older versions of
-        the migrated laminas packages.
+        我们鼓励你采用 <em>非保守</em> 的方式来迁移，以避免因为使用旧版本的包二导致迁移laminas中存在的问题。
     </p>
     <p>
-        <strong>If you are experiencing issues after the migration with this flag, we cannot offer support as we highly
-            encourage you to upgrade to the latest packages.</strong>
+        <strong>如果你使用这种方式升级之后遇到了问题，我们将不会解决方案，因此我们强烈建议你升级到最新版。</strong>
     </p>
 
     <pre class="codehilite"><code class="language-bash">$ laminas-migration migrate -e data --keep-locked-versions</code></pre>
 </blockquote>
 
-<p>For more information on available options, use the command's help function:</p>
+<p>我们可以通过命令查看其他可用的方法:</p>
 
 <pre class="codehilite"><code class="language-bash">$ laminas-migration help migrate</code></pre>
 
-<h2 id="optional-verify-changes">4. Verify changes <small>(optional)</small></h2>
+<h2 id="optional-verify-changes">4. 验证修改 <small>(可选)</small></h2>
 
 <p>
-    At this point, you can verify that the changes look correct. As an example, if
-    you use git, you could run the following command to determine what has changed:
+    此时，你可以查看进行的更改。例如，如果你使用git，你可以使用如下命令来查看更改：
 </p>
 
 <pre class="codehilite"><code class="language-bash">$ git diff</code></pre>
 
-<p>Things you might want to look for:</p>
+<p>你将会看见进行如下更改:</p>
 
 <ul>
-    <li>Renaming of files or classes in your own code that reference ZF
-        components. As an example <code>My\Models\ZendMailTransport</code> might
-        get renamed to <code>My\Models\LaminasMailTransport</code>. Such renames
-        are typically okay, and any references to those classes will be rewritten as
-        well. However, if external code may depend on them, you should verify.</li>
+    <li>重名了了ZF组件的文件或者类。例如<code>My\Models\ZendMailTransport</code>
+        重命名成了 <code>My\Models\LaminasMailTransport</code>。
+        这样的重命名方式通常来说是可取的，和这个类有关的所有引用也将会被重写。
+        然而，如果有外部代码依赖他，同样也需要去验证。</li>
 
-    <li>Changes to configuration keys. Most of these are made to match changes
-        in the Laminas libraries themselves, but you should check to see if they
-        are specific to your own code.</li>
+    <li>配置的名称也将会被修改。其中大多数的更改是为了匹配 Laminas 库本身。
+        但是还是需要你检查其中是否包含了你自定义代码的部分。</li>
 </ul>
 
 
-<h2 id="install-dependencies">5. Install dependencies</h2>
+<h2 id="install-dependencies">5. 安装依赖</h2>
 
 <p>
-    Once migration is done and you've performed any verification steps you need,
-    install dependencies:
+    一旦迁移并且执行了相关验证后，就可以开始安装依赖了：
 </p>
 
 <pre class="codehilite"><code class="language-bash">$ composer install</code></pre>
 
-<h2 id="test">6. Test</h2>
+<h2 id="test">6. 测试</h2>
 
 <p>
-    Run your unit tests, do end-to-end tests, whatever &mdash; but exercise the
-    application in some way.
+    运行单元测试，并执行端到端的测试，无论如何都要使用一些方式来验证你的应用。
 </p>
 
-<p>If anything does not work, determine the specifics, and report either:</p>
+<p>有任何不能执行的地方，都可以将其细节部分报告给我们：</p>
 
 <ul>
-    <li>In the repository of the specific component where you are observing problems.</li>
-    <li>The #laminas-issues channel of the <a href="https://laminas.dev/chat/">Laminas Slack</a>.</li>
+    <li>在你出现问题的特定包中报告给我们。</li>
+    <li>或者通过<a href="https://laminas.dev/chat/">Laminas Slack</a> 的 #laminas-issues 渠道。 </li>
 </ul>
 
-<h2 id="post-migration-optional">Post migration <small>(optional)</small></h2>
+<h2 id="post-migration-optional">提交迁移 <small>(可选)</small></h2>
 
-<p>In case the <code>--keep-locked-versions</code> flag was used, you definitely want to diff the <code>composer.json</code> and restore the old package constraints and remove the packages which were not required on project level before migration. After cleaning up the <code>composer.json</code>, you have to update the <code>composer.lock</code> by using the following command:
-        <pre class="codehilite"><code class="language-bash">$ composer update --lock</code></pre>
+<p>
+  之前我们使用了 <code>--keep-locked-versions</code> 参数,
+  你肯定需要对比 <code>composer.json</code> 以便恢复旧的程序包
+  以及移除迁移之前的程序使用的不必要了程序包。
+  清理完 <code>composer.json</code> 之后，你可能需要使用如下的命令来更新
+  <code>composer.lock</code> ：
+  <pre class="codehilite"><code class="language-bash">$ composer update --lock</code></pre>
 </p>
 
-<h2 id="summary">Summary</h2>
+<h2 id="summary">总结</h2>
 
-<p>To summarize the steps to migrate:</p>
+<p>迁移步骤如下:</p>
 
 <pre class="codehilite"><code class="language-bash">$ composer global require laminas/laminas-migration
 $ cd some/project
 $ laminas-migration migrate # maybe with -e data or -e data/cache
 $ composer install</code></pre>
 
-<p>Questions?</p>
+<p>问题咨询</p>
 
 <ul>
-    <li><a href="./faq/">Check the FAQ</a></li>
+    <li><a href="./faq/">查询FAQ</a></li>
     <li><a href="https://laminas.dev/chat/">Visit the Slack</a></li>
     <li><a href="https://discourse.laminas.dev/">Visit the Forums</a></li>
 </ul>
@@ -403,11 +391,11 @@ $ composer install</code></pre>
 
         <div class="col-md-3 col-sm-12 sidebar">
             <div class="subnavigation hidden-print">
-                <h4 class="subnavigation__title"><a href="/migration/">Migration to Laminas</a></h4>
+                <h4 class="subnavigation__title"><a href="/migration/">迁移到 Laminas</a></h4>
 
                 <ul class="subnavigation__list">
                     <li class="subnavigation__list-item subnavigation__list-item--active">
-                        <a class="subnavigation__link" href="/migration/">Introduction</a>
+                        <a class="subnavigation__link" href="/migration/">介绍</a>
                     </li>
                     <li class="subnavigation__list-item">
                         <a class="subnavigation__link" href="./faq/">FAQ</a>
