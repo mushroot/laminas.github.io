@@ -10,110 +10,113 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body id="page-top" data-spy="scroll" data-target=".toc" data-offset="20">
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-        <a class="logo-link navbar-brand" href="https://getlaminas.org/" data-tooltip data-placement="bottom" title="Go to the Laminas homepage">
-            <img src="https://docs.laminas.dev/img/laminas-foundation-white.svg" height="28" alt="Laminas">
-        </a>
-        <a class="navbar-title" href="https://docs.laminas.dev/" data-tooltip
-           data-placement="bottom" title="Go to the Laminas Documentation">
-            Documentation
-        </a>
-
-        <button type="button"
-                class="navbar-toggler"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <div class="dropdown sub-project-selector">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
-                            All Docs
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a href="https://docs.mezzio.dev/" class="dropdown-item">
-                                <div class="row align-items-center">
-                                    <div class="col-md-4 col-sm-12">
-                                        <img src="/img/laminas-mezzio-rgb.svg">
-                                    </div>
-                                    <div class="col-md-8 col-sm-12">
-                                        <strong>Mezzio</strong><br>
-                                        PSR-15 Middleware in Minutes
-                                    </div>
-                                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="logo-link navbar-brand" href="http://laminas.org.cn/" data-tooltip data-placement="bottom" title="Go to the Laminas homepage">
+                <img src="https://docs.laminas.dev/img/laminas-foundation-white.svg" height="28" alt="Laminas">
+            </a>
+            <a class="navbar-title" href="https://laminas.org.cn/" data-tooltip
+               data-placement="bottom" title="Go to the Laminas Documentation">
+                文档
+            </a>
+    
+            <button type="button"
+                    class="navbar-toggler"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <div class="dropdown sub-project-selector">
+                            <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
+                                所有文档
                             </a>
-                            <a href="https://docs.laminas.dev/components/" class="dropdown-item">
-                                <div class="row align-items-center">
-                                    <div class="col-md-4 col-sm-12">
-                                        <img src="/img/laminas-components-rgb.svg">
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="/components/" class="dropdown-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4 col-sm-12">
+                                            <img src="/img/laminas-components-rgb.svg">
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <strong>组件</strong><br>
+                                            为企业级应用而生的组件
+                                        </div>
                                     </div>
-                                    <div class="col-md-8 col-sm-12">
-                                        <strong>Components</strong><br>
-                                        Components for Enterprise Applications
+                                </a>
+                                <a href="/mvc/" class="dropdown-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4 col-sm-12">
+                                            <img src="/img/laminas-mvc-rgb.svg">
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <strong>MVC</strong><br>
+                                            企业级的MVC框架
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="https://docs.laminas.dev/mvc" class="dropdown-item">
-                                <div class="row align-items-center">
-                                    <div class="col-md-4 col-sm-12">
-                                        <img src="/img/laminas-mvc-rgb.svg">
+                                </a>
+                                <a href="https://docs.mezzio.dev/" class="dropdown-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4 col-sm-12">
+                                            <img src="/img/laminas-mezzio-rgb.svg">
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <strong>Mezzio（官方）</strong><br>
+                                            PSR-15 Middleware in Minutes
+                                        </div>
                                     </div>
-                                    <div class="col-md-8 col-sm-12">
-                                        <strong>MVC</strong><br>
-                                        MVC for Enterprise Applications
+                                </a>
+                                <a href="https://api-tools.getlaminas.org/documentation" class="dropdown-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4 col-sm-12">
+                                            <img src="/img/laminas-api-tools-rgb.svg">
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <strong>API Tools（官方）</strong><br>
+                                            Build RESTful APIs in Minutes
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="https://api-tools.getlaminas.org/documentation" class="dropdown-item">
-                                <div class="row align-items-center">
-                                    <div class="col-md-4 col-sm-12">
-                                        <img src="/img/laminas-api-tools-rgb.svg">
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item dropdown-item--secondardy" href="/migration/">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8 offset-md-4 col-sm-12">
+                                            迁移到 Laminas
+                                        </div>
                                     </div>
-                                    <div class="col-md-8 col-sm-12">
-                                        <strong>API Tools</strong><br>
-                                        Build RESTful APIs in Minutes
+                                </a>
+                                <a class="dropdown-item dropdown-item--secondardy" href="/tutorials/">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8 offset-md-4 col-sm-12">
+                                            入门引导
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item dropdown-item--secondardy" href="https://docs.laminas.dev/migration/">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8 offset-md-4 col-sm-12">
-                                        Migration to Laminas
-                                    </div>
-                                </div>
-                            </a>
-                            <a class="dropdown-item dropdown-item--secondardy" href="https://docs.laminas.dev/tutorials/">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8 offset-md-4 col-sm-12">
-                                        Tutorials
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="https://getlaminas.org/participate" class="nav-link">Community</a>
-                </li>
-            </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://docs.laminas.dev/" target="_blank" class="nav-link">官方文档（En）</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://getlaminas.org/participate" class="nav-link">Community</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
 <header class="header">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <h1 class="header__title">
-                    Migration to Laminas
+                    迁移到 Laminas
                     <small class="header__subtitle">FAQ</small>
                 </h1>
             </div>
@@ -125,49 +128,48 @@
     <main class="col-md-9 col-sm-12 content">
 
         <div class="toc">
-            <h6 class="toc__headline">On this page</h6>
+            <h6 class="toc__headline">导航</h6>
 
             <ul class="toc__list">
-                <li class="toc__entry"><a class="toc__link nav-link" href="#module-and-config-post-processor-injection">Module and Config Post Processor Injection</a></li>
-                <li class="toc__entry"><a class="toc__link nav-link" href="#clear-your-caches">Clear Your Caches</a></li>
-                <li class="toc__entry"><a class="toc__link nav-link" href="#zend-framework-v1-considerations">Zend Framework v1 Considerations</a></li>
+                <li class="toc__entry"><a class="toc__link nav-link" href="#module-and-config-post-processor-injection">模块和配置处理器的注入</a></li>
+                <li class="toc__entry"><a class="toc__link nav-link" href="#clear-your-caches">清理缓存</a></li>
+                <li class="toc__entry"><a class="toc__link nav-link" href="#zend-framework-v1-considerations">Zend Framework v1 的注意事项</a></li>
             </ul>
         </div>
 
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Overview</a></li>
-                <li class="breadcrumb-item"><a href="/migration/">Migration to Laminas</a></li>
+                <li class="breadcrumb-item"><a href="/">总览</a></li>
+                <li class="breadcrumb-item"><a href="/migration/">迁移到 Laminas</a></li>
                 <li class="breadcrumb-item active" aria-current="page">FAQ</li>
             </ol>
         </nav>
 
         <h1>FAQ</h1>
 
-<h2 id="module-and-config-post-processor-injection">Module and Config Post Processor injection</h2>
+<h2 id="module-and-config-post-processor-injection">模块和配置处理器的注入</h2>
 
 <p>
-    If you are migrating an MVC, Apigility, or Expressive application to Laminas,
-    the migration tooling attempts to inject some code in your application. This can
-    fail if you have non-standard configuration.
+    如果你正在将一个 MVC, Apigility, 或者 Expressive 应用迁移到 Laminas，
+    迁移工具将会尝试在你的应用中注入一些代码。如果你使用的是为标准配置的话，
+    这样做就有可能导致迁移失败。
 </p>
 
-<h3 id="migrating-mvc-and-apigility-applications">Migrating MVC and Apigility applications</h3>
+<h3 id="migrating-mvc-and-apigility-applications">迁移 MVC 及 Apigility 应用</h3>
 
 <p>
-    When migrating MVC and Apigility applications to Laminas MVC and Laminas API
-    Tools, the migration tooling attempts to add <code>Laminas\ZendFrameworkBridge</code> as a
-    module to the top of the <code>config/modules.config.php</code> file. If injection fails,
-    add the module in a way appropriate to your application.
+    在迁移 MVC 及 Apigility 应用至 Laminas MVC 和 Laminas API 工具时，
+    迁移工具将会尝试在 <code>config/modules.config.php</code> 文件中添加
+    <code>Laminas\ZendFrameworkBridge</code> 模块。如果添加失败，
+    你可以选择一个合适的方式将其引入。
 </p>
 
 <h3 id="expressive">Expressive</h3>
 
 <p>
-    When migrating Expressive applications to Mezzio, the migration tooling attempts
-    to add <code>Laminas\ZendFrameworkBridge\ConfigPostProcessor</code> as a post processor
-    class to the <code>ConfigAggregator</code> constructor. The <code>ConfigAggregator</code> constructor
-    has the following signature:
+    在迁移 Expressive 应用至 Mezzio 时，迁移工具将会尝试在 <code>ConfigAggregator</code>
+    的构造函数中添加一个后置处理器 <code>Laminas\ZendFrameworkBridge\ConfigPostProcessor</code>。
+    <code>ConfigAggregator</code> 的构造函数如下所示：
 </p>
 
 <pre class="codehilite"><code class="language-php">public function __construct(
@@ -177,8 +179,7 @@
 )</code></pre>
 
 <p>
-    Typically, the structure of the <code>config/config.php</code> file in Expressive and
-    Mezzio applications looks like the following:
+    通常 Expressive 及 Mezzio 用用的 <code>config/config.php</code> 文件结构如下：
 </p>
 
 <pre class="codehilite"><code class="language-php">$cacheConfig = [
@@ -209,51 +210,50 @@ $aggregator = new ConfigAggregator([
 
 return $aggregator->getMergedConfig();</code></pre>
 
-<p>As such, the migration tooling rewrites the second to last line to read:</p>
+<p>迁移工具会将最后两行改为：</p>
 
 <pre class="codehilite"><code class="language-php">], $cacheConfig['config_cache_path'], [\Laminas\ZendFrameworkBridge\ConfigPostProcessor::class]);</code></pre>
 
 <p>
-    In most cases, failure to inject means that the individual arguments have
-    been pushed to their own line. In such cases, add the third argument as
-    detailed above.
+    大多数情况的注入失败的原因就是因为参数的结构得到了破坏。这种情况下就是自己手动添加上面的参数。
 </p>
 
 <p>
-    In other cases, applications may already be using post processors. If so,
-    add <code>\Laminas\ZendFrameworkBridge\ConfigPostProcessor::class</code> to the list of
-    post processors.
+    另外，应用可能正在使用其他的后置处理器。如果是这样额话，就要直接添加
+    <code>\Laminas\ZendFrameworkBridge\ConfigPostProcessor::class</code>
 </p>
 
-<h2 id="clear-your-caches">Clear your caches</h2>
+<h2 id="clear-your-caches">清理缓存</h2>
 
 <p>
-    If your application is not running in development mode, you will need to clear
-    any configuration caches you have before testing. If you are using
-    zf-development-mode (which becomes laminas-development-mode!), try enabling
-    development mode:
+    如果你的应用无法在开发环境中运行，你可能需要清理之前遗留的缓存。
+    如果你使用 zf-development-mode (将会变更为 laminas-development-mode!)，尝试去开启开发模式：
 </p>
 
 <pre class="codehilite"><code class="language-bash">$ composer development-enable</code></pre>
 
-<p>Expressive/Mezzio users can use the <code>clear-config-cache</code> command:</p>
+<p>Expressive/Mezzio 可以使用 <code>clear-config-cache</code> 命令:</p>
 
 <pre class="codehilite"><code class="language-bash">$ composer clear-config-cache</code></pre>
 
-<h2 id="zend-framework-v1-considerations">Zend Framework v1 Considerations</h2>
+<h2 id="zend-framework-v1-considerations">Zend Framework v1 注意事项</h2>
 
 <p>
-    <a href="https://framework.zend.com/blog/2016-06-28-zf1-eol.html">Zend Framework version 1 is past end of life</a>, so it does not receive any rewrites during migration. However, custom code in the project being migrated does receive rewrites. This has the potential to cause errors.
+    <a href="https://framework.zend.com/blog/2016-06-28-zf1-eol.html">Zend Framework version 1 以及停止维护</a>,
+    因此在迁移过程中不会进行任何重写操作。然而，项目中的自定义代码可能会受到重写。这将会导致一些错误。
 </p>
 
 <h3 id="zend-mail-v1">Zend_Mail</h3>
 
 <p>
-    The <code>Zend_Mail</code> component uses a "ZendMail_" prefix for filenames generated by the <code>Zend_Mail_Transport_File</code> transport. After migration, this transport adapter will continue to generate filenames using the "ZendMail_" prefix. Any custom code that also references the "ZendMail_" prefix will be rewritten to instead use a prefix of "LaminasMail_".
+    如 <code>Zend_Mail</code> 组件使用 "ZendMail_" 文件名前缀，如 <code>Zend_Mail_Transport_File</code>。
+    迁移后 transport 适配器将会继续使用 "ZendMail_" 作为文件前缀。
+    但是在自定义模块中的 "ZendMail_" 前缀则会被重写为 "LaminasMail_"。
 </p>
 
 <p>
-    Since the v1 <code>Zend_Mail</code> component and later versions both use the same "ZendMail_" prefix, the migration cannot discriminate when rewriting custom project code. Consequently, you will need to reconcile any errors in your code arising from this prefix rewrite.
+    由于 V1 <code>Zend_Mail</code> 组件及其最新的版本均使用 "ZendMail_" 前缀，迁移工具在重写自定义代码的时候将无法识别。
+    所以你需要排查所有使用此前缀的代码。
 </p>
 
 
@@ -261,11 +261,11 @@ return $aggregator->getMergedConfig();</code></pre>
 
         <div class="col-md-3 col-sm-12 sidebar">
             <div class="subnavigation hidden-print">
-                <h4 class="subnavigation__title"><a href="/migration/">Migration to Laminas</a></h4>
+                <h4 class="subnavigation__title"><a href="/migration/">迁移到 Laminas</a></h4>
 
                 <ul class="subnavigation__list">
                     <li class="subnavigation__list-item">
-                        <a class="subnavigation__link" href="/migration/">Introduction</a>
+                        <a class="subnavigation__link" href="/migration/">介绍</a>
                     </li>
                     <li class="subnavigation__list-item subnavigation__list-item--active">
                         <a class="subnavigation__link" href="./">FAQ</a>
