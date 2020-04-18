@@ -248,6 +248,10 @@ $ git commit -m 'Initial import'</code></pre>
 
     <pre class="codehilite language-bash"><code class="language-bash">
     export PATH={path to add}:$PATH
+    // 例如 Linux 中在我们需要在用户目录下的 .profile 文件中中添加如下代码：
+    export PATH=$HOME/.config/composer/vendor/laminas/laminas-migration/bin:$PATH
+    // 然后执行即可
+    source .profile
     </code></pre>
 
     <p>
